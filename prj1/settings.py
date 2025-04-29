@@ -80,17 +80,17 @@ WSGI_APPLICATION = 'prj1.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME'),
-        'USER': os.getenv('DB_USER'),
-        'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': os.getenv('DB_HOST'),
-        'PORT': '5432',
+        'NAME': 'task_db',  # Tên cơ sở dữ liệu
+        'USER': 'postgres',  # Tên người dùng
+        'PASSWORD': 'geBZCTVlbFqyxHpPaFTofkugmvSkLFUL',  # Mật khẩu
+        'HOST': 'gondola.proxy.rlwy.net',  # Host từ Railway
+        'PORT': '28216',  # Cổng từ Railway
     }
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
